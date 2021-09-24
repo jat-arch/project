@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* Style the header */
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 370px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/* Style the footer */
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-family: arial narrow;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+}
+
+.grid-fluid {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.grid-960 {
+  width: 960px;
+  margin: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-1200 {
+  width: 1200px;
+  margin: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 5px;
+  background-color: orange;
+  grid-column: span 9;
+  height: 60px;
+  padding: .7rem;
+  border: solid 1px #e6e6e6;
+}
+
+header img {
+  max-height: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: flex-end;
+  border-width: 0px;
+}
+
+header nav a {
+  display: inline-block;
+  padding-left: 15px;
+  text-decoration: none;
+  color: blue;
+  font-size: 2rem;
+}
+
+header nav a:hover {
+  color: #ed1c24;
+  text-decoration: underline;
+}
+
+nav {
+  grid-column: span 5;
+  grid-row: span 2;
+  padding: 2rem;
+  border: solid 1px #e6e6e6;
+}
+
+main {
+  grid-column: span 6;
+  padding: 2rem;
+  border: solid 1px #e6e6e6;
+}
+
+aside {
+  grid-column: span 3;
+  padding: .9rem;
+  border: solid 1px #e6e6e6;
+}
+
+footer {
+  grid-column: span 3;
+  padding: .5rem;
+  border: solid 1px #e6e6e6;
+  background-color: orange
+}
+
+aside img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+aside img: last-of-type {
+  margin-bottom: 0px;
+}
+
+hr {
+  height: 1px;
+  width: 60%;
+  border-width: 0px;
+  background-color: #e6e6e6;
+}
+
+header:hover,
+nav.main:hover,
+main:hover,
+aside:hover,
+footer:hover {
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+h1,
+h2,
+h3 {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+}
+
+h1 {
+  position: relative;
+  top: -5px;
+  font-size: 2rem;
+  color: #ed1c24;
+}
+
+h3 {
+  font-size: .9rem;
+  line-height: .9rem;
+}
+
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
+
+article p {
+  max-width: 323px;
+}
+
+article img {
+  position: absolute;
+  right: 0px;
+  max-width: 200px;
+  margin-left: 30px;
+}
+
+article h1 {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+article p:first-of-type {
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .grid-960 {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 15px);
+    margin-right: 15px;
+  }
+
+  header,
+  nav,
+  main,
+  aside {
+    top: 0px;
+    margin-bottom: 10px;
+  }
+
+
+    header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  header img {
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    max-height: 70px;
+  }
+
+  header nav a {
+    margin-bottom: -20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  aside img {
+    width: 100%;
+    align: center;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  article img {
+    position: relative;
+    margin: 0px 0px 10px 0px;
+    max-width: 100%;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  Punjab kings
+</header>
+<br><br>
+<nav >eyghrjtedvhsjygkhmhdvasjhj,k</nav>
+
+
+    <ul style="color: white">
+<li><a href="file:///C:/Users/act/Desktop/final/Ans1.html"><u>Home</u></a></li>
+<li><a href="file:///C:/Users/act/Desktop/final/ans3.html"><U>Team</U></a></li>
+<li><a href="file:///C:/Users/act/Desktop/final/ans2.html#home"><u>photos</u></a></li>
+    <li><a href="file:///C:/Users/act/Desktop/final/ans4.html"><u>More about</u></a></li>
+  
+
+  
+</ul>
+  </main>
+  <aside>
+  
+    <h1>Punjab Kings</h1>
+    <p>The Punjab Kings (PBKS) are a franchise cricket team based in Mohali, Punjab that plays in the Indian Premier League (IPL). Established in 2008 as the Kings XI Punjab (KXIP), the franchise is jointly owned by Mohit Burman, Ness Wadia, Preity Zinta and Karan Paul. The team plays its home matches at the PCA Stadium, Mohali. <p> Since 2010, they also have been playing some of their home games at either Dharamsala or Indore. Apart from the 2014 season when they topped the league table and finished runners-up, the team has made only one other playoff appearance in 13 seasons</p></p>
+  </article>
+
+</aside>
+<footer>
+  <p>Terms And ConditionsPrivacy / PolicyProhibited / Items / Contact Us / CSR  / About Us / Corporate Information /
+Connect with us</p>
+</footer>
+
+</body>
+</html>

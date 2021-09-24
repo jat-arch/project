@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OWL Carousel Sample</title>
+
+	<!-- OWL CAROUSEL CSS -->
+	<!-- File 1/2: Basic style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+	<!--<link rel="stylesheet" href="">-->
+	
+	<!-- file 2/2: theme file -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+	<!-- OUR CUSTOM CSS -->
+	<link rel="stylesheet" href="ans2.css">
+</head>
+<body>
+	<ul>
+  <img class="logo" src="logo.png">
+  <h2>Punjab kings</h2>
+    <li><a href="file:///C:/Users/act/Desktop/final/ans4.html">More about</a></li>
+  <li><a href="file:///C:/Users/act/Desktop/final/ans3.html">Team</a></li>
+<li><a href="file:///C:/Users/act/Desktop/final/ans2.html#home">photos</a></li>
+  <li><a href="file:///C:/Users/act/Desktop/final/Ans1.html">Home</a></li>
+</ul>
+	<h1>Photos</h1>
+	<hr>
+
+	<div class="owl-slider owl-carousel owl-theme" id="slider">
+		<div class="slide">
+			<img src="1.jpg" alt="">
+			
+		</div>
+		<div class="slide">
+			<img src="2.jpg" alt="">
+		
+		</div>
+		<div class="slide">
+			<img src="3.jpg" alt="">
+		
+		</div>
+		<div class="slide">
+			<img src="4.jpg" alt="">
+	
+		</div>
+			<div class="slide">
+			<img src="5.jpg" alt="">
+			
+		</div>
+	</div>
+	
+
+
+	<!-- SCRIPT Files -->
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+	<!-- Owl.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+	<!-- Custom script -->
+	<!-- <script src="script.js"></script> -->
+
+	<script>
+		$(document).ready(function(){
+			$('.owl-slider').owlCarousel({
+			    margin:2,
+			    nav:true,
+			    items: 1,
+			    autoplay: true
+			})
+		});
+	</script>
+
+</body>
+</html>
